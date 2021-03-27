@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/nmax.rb'
+
+puts 'start'
+puts Nmax::SearchNumbersInIO.new(STDIN, (ARGV[0] || 10).to_i).call
+
